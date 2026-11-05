@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電卓</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>電卓</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index4.html">ホーム</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="work.html">課題</a></li>
+                <li><a href="calculate.html">電卓</a></li>
+                <li><a href="githubsearch.html">GitHub検索</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>計算式</h2>
+            
+            <div class="form-group">
+                <label for="value1">値1</label>
+                <input type="text" id="value1" class="input-field">
+            </div>
+
+            <div class="form-group">
+                <label for="value2">値2</label>
+                <input type="text" id="value2" class="input-field">
+            </div>
+
+            <div class="select-wrapper">
+                <label for="operator">演算子 </label>
+                <select id="operator">
+                    <option value="add">足し算</option>
+                    <option value="subtract">引き算</option>
+                    <option value="multiply">掛け算</option>
+                    <option value="divide">割り算</option>
+                </select>
+            </div>
+
+            <p class="info-text">ここに計算式が表示されます</p>
+            <p class="info-text">ここに結果が表示されます</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 私のポートフォリオ</p>
+    </footer>
+
+</body>
+</html>
