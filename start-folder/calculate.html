@@ -22,37 +22,32 @@
     </header>
 
     <main>
-        <div class="card">
+        <section class="contact-form">
             <h2>計算式</h2>
-            
-            <div class="form-group">
+            <form id="calcForm" action="#" method="POST">
                 <label for="value1">値1</label>
-                <input type="text" id="value1" class="input-field">
-            </div>
+                <input type="number" id="value1"><br>
 
-            <div class="form-group">
                 <label for="value2">値2</label>
-                <input type="text" id="value2" class="input-field">
-            </div>
+                <input type="number" id="value2"><br>
 
-            <div class="select-wrapper">
-                <label for="operator">演算子 </label>
-                <select id="operator">
-                    <option value="add">足し算</option>
-                    <option value="subtract">引き算</option>
-                    <option value="multiply">掛け算</option>
-                    <option value="divide">割り算</option>
-                </select>
-            </div>
+                <label for="choice">演算子 </label>
+                <select name="choice" id="choice">
+                    <option value="addition">足し算</option>
+                    <option value="subtraction">引き算</option>
+                    <option value="multiplication">掛け算</option>
+                    <option value="division">割り算</option>
+                </select><br><br>
+            </form>
 
-            <p class="info-text">ここに計算式が表示されます</p>
-            <p class="info-text">ここに結果が表示されます</p>
-        </div>
+            <p id="formula">ここに計算式が表示されます</p>
+            <p id="result">ここに結果が表示されます</p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2026 私のポートフォリオ</p>
     </footer>
-
+    <script src="JavaScript/calculate.js"></script>
 </body>
 </html>
